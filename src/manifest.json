@@ -1,7 +1,7 @@
 {
-    "name": "Xpath Helper Plus",
+    "name": "XPath-Helper-X",
     "version": "1.0.26",
-    "description": "Xpath Helper Plus",
+    "description": "XPath-Helper-X - Chrome 扩展，可移动窗口版 XPath 辅助工具",
     "manifest_version": 3,
     "action": {
       "default_popup": "index.html",
@@ -10,7 +10,7 @@
         "24": "assets/icon24.png",
         "32": "assets/icon32.png"
       },
-      "default_title": "Xpath Helper Plus"
+      "default_title": "XPath-Helper-X"
     },
     "background": {
         "service_worker": "background.js"

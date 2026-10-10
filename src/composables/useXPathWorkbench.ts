@@ -7,7 +7,7 @@ export function useXPathWorkbench() {
   const { isSupported, copy } = useClipboard()
 
   const mode = ref<string>('xpath')
-  const xpathRule = ref<string>("string('xpath helper plus')")
+  const xpathRule = ref<string>("string('XPath-Helper-X')")
   const xpathShort = useLocalStorage<boolean>('xpathShort', false)
   const xpathBatch = useLocalStorage<boolean>('xpathBatch', false)
   const xpathResult = ref<string>('')

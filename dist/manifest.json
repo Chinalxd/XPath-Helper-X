@@ -1,1 +1,40 @@
-{"name": "XPath-Helper-X", "version": "1.0.26", "description": "XPath-Helper-X - Chrome 扩展，可移动窗口版 XPath 辅助工具", "manifest_version": 3, "action": {"default_icon": {"16": "assets/icon16.png", "24": "assets/icon24.png", "32": "assets/icon32.png"}, "default_title": "XPath-Helper-X"}, "background": {"service_worker": "background.js"}, "content_scripts": [{"matches": ["<all_urls>"], "js": ["contentScript.js"], "css": ["custom.css"], "run_at": "document_end", "all_frames": false}], "web_accessible_resources": [{"matches": ["<all_urls>"], "resources": ["index.html", "index.js", "*.css", "custom.css", "assets/*", "favicon.ico"]}], "permissions": ["activeTab", "clipboardWrite"]}
+{
+    "name": "XPath-Helper-X",
+    "version": "1.0.26",
+    "description": "XPath-Helper-X - Chrome 扩展，可移动窗口版 XPath 辅助工具",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "assets/icon16.png",
+        "24": "assets/icon24.png",
+        "32": "assets/icon32.png"
+      },
+      "default_title": "XPath-Helper-X"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": [
+            "contentScript.js"
+          ],
+          "css": [
+            "custom.css"
+          ],
+          "run_at": "document_start",
+          "all_frames": false
+        }
+    ],
+    "web_accessible_resources": [{
+        "matches": ["<all_urls>"],
+        "resources": ["index.html", "index.js", "index.c63de488.css", "custom.css", "assets/*", "favicon.ico"]
+    }],
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "clipboardWrite"
+    ]
+}
